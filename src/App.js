@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Header from './componets/header/Header'; // Asegúrate de que este es el correcto
+import HeaderF from './componets/header/HeaderF'; // Asegúrate de que este es el correcto
+import Body from './componets/body/Body';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header setActiveSection={setActiveSection} />
+      <HeaderF />
+      <Body activeSection={activeSection} />
     </div>
   );
 }
