@@ -17,46 +17,46 @@ const FormContact = () => {
   };
 
   return (
-    <div className="max-w-lg mx-auto p-6 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white rounded-lg shadow-lg">
-      <h2 className="text-3xl font-bold mb-6 text-center">¡Hablemos!</h2>
-      <form onSubmit={handleSubmit} className="space-y-6">
+    <div className="max-w-lg mx-auto p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+      <h2 className="text-2xl font-semibold mb-4 text-gray-800 text-center">¡Hablemos!</h2>
+      <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="name" className="block text-lg font-medium">Nombre</label>
+          <label htmlFor="name" className="block text-sm font-normal text-gray-700">Nombre</label>
           <input
             type="text"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full p-3 mt-1 border border-gray-200 rounded-lg bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full p-3 mt-1 border-b border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Tu nombre"
             required
           />
         </div>
         <div>
-          <label htmlFor="surname" className="block text-lg font-medium">Apellido</label>
+          <label htmlFor="surname" className="block text-sm font-normal text-gray-700">Apellido</label>
           <input
             type="text"
             id="surname"
             value={surname}
             onChange={(e) => setSurname(e.target.value)}
-            className="w-full p-3 mt-1 border border-gray-200 rounded-lg bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full p-3 mt-1 border-b border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Tu apellido"
             required
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-lg font-medium">Email</label>
+          <label htmlFor="email" className="block text-sm font-normal text-gray-700">Email</label>
           <input
             type="email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="w-full p-3 mt-1 border border-gray-200 rounded-lg bg-gray-900 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500"
+            className="w-full p-3 mt-1 border-b border-gray-300 bg-gray-50 text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
             placeholder="Tu email"
             required
           />
         </div>
-        <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-lg text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <button type="submit" className="w-full bg-gray-500 hover:bg-gray-600 text-white p-3 rounded-lg text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-gray-500 mb-8">
           Enviar Mensaje
         </button>
       </form>

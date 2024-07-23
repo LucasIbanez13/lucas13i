@@ -22,7 +22,7 @@ const Body = ({ activeSection }) => {
           <div className="flex items-center mb-5">
             <div className="w-1/2 p-4">
               <h2 className="text-2xl font-semibold text-gray-800">
-                Soy apasionado a los videojuegos, películas, música y tecnología
+                Me encanta jugar videojuegos como CSGO, League of Legends, y Red Dead Redemption. Disfruto mucho del mundo de los videojuegos.
               </h2>
             </div>
             <div className="w-1/2 h-80 bg-red-500"></div>
@@ -33,7 +33,7 @@ const Body = ({ activeSection }) => {
             <div className="w-1/2 h-80 bg-red-500"></div>
             <div className="w-1/2 p-4">
               <h2 className="text-2xl font-semibold text-gray-800">
-                Soy apasionado a los videojuegos, películas, música y tecnología
+                Me gusta toda clase de música, pero me siento más atraído por el hip hop americano. También disfruto viendo películas de varios géneros.
               </h2>
             </div>
           </div>
@@ -42,7 +42,7 @@ const Body = ({ activeSection }) => {
           <div className="flex items-center mb-5">
             <div className="w-1/2 p-4">
               <h2 className="text-2xl font-semibold text-gray-800">
-                Soy apasionado a los videojuegos, películas, música y tecnología
+                Soy un apasionado de la tecnología y me fascina el avance que está ocurriendo en este campo. 
               </h2>
             </div>
             <div className="w-1/2 h-80 bg-red-500"></div>

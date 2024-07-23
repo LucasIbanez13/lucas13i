@@ -3,6 +3,7 @@ import './App.css';
 import Header from './componets/header/Header';
 import HeaderF from './componets/header/HeaderF';
 import Body from './componets/body/Body';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   const [activeSection, setActiveSection] = useState('');
