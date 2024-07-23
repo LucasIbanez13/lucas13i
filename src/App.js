@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import Header from './componets/header/Header'; // Asegúrate de que este es el correcto
-import HeaderF from './componets/header/HeaderF'; // Asegúrate de que este es el correcto
+import Header from './componets/header/Header';
+import HeaderF from './componets/header/HeaderF';
 import Body from './componets/body/Body';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Header setActiveSection={setActiveSection} />
-      <HeaderF />
+      {activeSection === '' && <HeaderF />} {/* Mostrar HeaderF solo si no hay sección activa */}
       <Body activeSection={activeSection} />
     </div>
   );
