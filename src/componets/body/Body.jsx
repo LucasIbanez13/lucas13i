@@ -1,10 +1,10 @@
 import React from 'react';
 import Banner from './banner/Banner';
-import FormContact from './form/FormContact';
 import Contacto from '../header/nav/menu/Contacto';
 import SobreMi from '../header/nav/menu/SobreMi';
+import Posteo from '../header/nav/menu/Posteo';
 
-const Body = ({ activeSection }) => {
+const Body = ({ activeSection, setActiveSection }) => {
   return (
     <div>
       {/* Renderizar Banner solo si no hay sección activa */}
@@ -13,7 +13,7 @@ const Body = ({ activeSection }) => {
       {/* Renderizar contenido basado en la sección activa */}
       {activeSection === 'sobreMi' && <SobreMi />}
       {activeSection === 'contacto' && <Contacto />}
-      {activeSection === 'posts' && <div> {/* Aquí puedes agregar el contenido de "Posteo" */} </div>}
+      {activeSection === 'posteo' && <Posteo />}
       
       {/* Renderizar secciones de contenido solo si no hay sección activa */}
       {activeSection === '' && (
@@ -51,7 +51,17 @@ const Body = ({ activeSection }) => {
       )}
 
       {/* El formulario de contacto se muestra siempre al final si no está activa la sección de contacto */}
-      {activeSection === '' && <FormContact />}
+      {activeSection === '' && (
+        <div className="my-10 text-center">
+          <h2 className="text-4xl font-semibold text-gray-800 mb-5">Charla conmigo ahora!</h2>
+          <button
+            className="bg-blue-500 text-white text-lg px-40 py-5 rounded-lg"
+            onClick={() => setActiveSection('contacto')}
+          >
+            Continuar
+          </button>
+        </div>
+      )}
     </div>
   );
 }

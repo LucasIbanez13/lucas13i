@@ -12,7 +12,7 @@ function App() {
     <div>
       <Header setActiveSection={setActiveSection} />
       {activeSection === '' && <HeaderF />} {/* Mostrar HeaderF solo si no hay sección activa */}
-      <Body activeSection={activeSection} />
+      <Body activeSection={activeSection} setActiveSection={setActiveSection} />
     </div>
   );
 }

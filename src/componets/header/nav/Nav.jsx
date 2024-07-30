@@ -37,7 +37,7 @@ const Nav = ({ setActiveSection }) => {
         href="#"
         onClick={(e) => {
           e.preventDefault();
-          setActiveSection('posts');
+          setActiveSection('posteo');
         }}
         className="text-gray-700 hover:text-purple-600"
       >
