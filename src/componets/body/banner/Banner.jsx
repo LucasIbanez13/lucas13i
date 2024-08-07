@@ -5,9 +5,9 @@ import 'slick-carousel/slick/slick-theme.css';
 
 // Asegúrate de que las rutas a las imágenes sean correctas
 const images = [
-  '/image1.jpeg',
-  '/image2.jpeg',
-  '/image3.jpeg'
+  '/Rectangle 47.png',
+  '/Rectangle 48.png',
+  '/Rectangle 49.png'
 ];
 
 const Banner = () => {

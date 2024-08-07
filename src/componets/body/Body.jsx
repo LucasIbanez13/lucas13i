@@ -25,13 +25,13 @@ const Body = ({ activeSection, setActiveSection }) => {
                 Me encanta jugar videojuegos como CSGO, League of Legends, y Red Dead Redemption. Disfruto mucho del mundo de los videojuegos.
               </h2>
             </div>
-            <div className="w-1/2 h-80 bg-red-500"></div>
+            <div className="w-1/2 h-80 bg-cover bg-center" style={{ backgroundImage: 'url(/Frame21.png)' }}></div>
           </div>
           
           {/* Segunda sección */}
           <div className="flex items-center mb-5">
-            <div className="w-1/2 h-80 bg-red-500"></div>
-            <div className="w-1/2 p-4">
+          <div className="w-1/2 h-80 bg-cover bg-center" style={{ backgroundImage: 'url(/Frame23.png)' }}></div>
+          <div className="w-1/2 p-4">
               <h2 className="text-2xl font-semibold text-gray-800">
                 Me gusta toda clase de música, pero me siento más atraído por el hip hop americano. También disfruto viendo películas de varios géneros.
               </h2>
@@ -45,7 +45,7 @@ const Body = ({ activeSection, setActiveSection }) => {
                 Soy un apasionado de la tecnología y me fascina el avance que está ocurriendo en este campo. 
               </h2>
             </div>
-            <div className="w-1/2 h-80 bg-red-500"></div>
+            <div className="w-1/2 h-80 bg-cover bg-center" style={{ backgroundImage: 'url(/Frame22.png)' }}></div>
           </div>
         </div>
       )}

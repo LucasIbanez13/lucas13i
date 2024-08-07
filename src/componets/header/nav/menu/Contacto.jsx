@@ -11,13 +11,10 @@ const Contacto = () => {
           <a href="https://wa.me/3812018090" className="text-blue-500 hover:underline" aria-label="WhatsApp">
             <i className="fab fa-whatsapp fa-lg"></i>
           </a>
-          <a href="https://facebook.com/lucas.ibanez" className="text-blue-500 hover:underline" aria-label="Facebook">
-            <i className="fab fa-facebook fa-lg"></i>
-          </a>
-          <a href="https://instagram.com/lucas13i" className="text-blue-500 hover:underline" aria-label="Instagram">
+          <a href="https://www.instagram.com/lucas_ibanez012/" className="text-blue-500 hover:underline" aria-label="Instagram">
             <i className="fab fa-instagram fa-lg"></i>
           </a>
-          <a href="https://linkedin.com/in/lucas-ibanez" className="text-blue-500 hover:underline" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/lucas-gabriel-iba%C3%B1ez-1bb599280/" className="text-blue-500 hover:underline" aria-label="LinkedIn">
             <i className="fab fa-linkedin fa-lg"></i>
           </a>
         </div>
