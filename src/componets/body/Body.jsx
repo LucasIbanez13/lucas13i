@@ -3,6 +3,7 @@ import Banner from './banner/Banner';
 import Contacto from '../header/nav/menu/Contacto';
 import SobreMi from '../header/nav/menu/SobreMi';
 import Posteo from '../header/nav/menu/Posteo';
+import Proyectos from '../header/nav/menu/Proyectos';
 
 const Body = ({ activeSection, setActiveSection }) => {
   return (
@@ -14,6 +15,8 @@ const Body = ({ activeSection, setActiveSection }) => {
       {activeSection === 'sobreMi' && <SobreMi />}
       {activeSection === 'contacto' && <Contacto />}
       {activeSection === 'posteo' && <Posteo />}
+      {activeSection === 'proyectos' && <Proyectos />}
+
       
       {/* Renderizar secciones de contenido solo si no hay sección activa */}
       {activeSection === '' && (

@@ -43,6 +43,16 @@ const Nav = ({ setActiveSection }) => {
       >
         Posteo
       </a>
+      <a
+        href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          setActiveSection('proyectos');
+        }}
+        className="text-gray-700 hover:text-purple-600"
+      >
+        proyectos
+      </a>
     </nav>
   );
 }
